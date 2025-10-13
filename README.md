@@ -16,7 +16,7 @@ Cài đặt và mô phỏng **thuật toán A\*** để điều khiển robot h�
 - **Suck** để làm sạch ô hiện tại.  
 - Sau mỗi hành động, **mọi ô dirty còn lại** sẽ tăng thêm **1 đơn vị chi phí hút bụi**.
 
-**Yêu cầu chương trình:**
+**Yêu cầu:**
 - Cho phép người dùng:
 - Nhập kích thước ma trận \(A_{m,n}\).  
 - Chọn số lượng và vị trí ngẫu nhiên của các ô **dirty**.  
@@ -30,7 +30,7 @@ Cài đặt và mô phỏng **thuật toán A\*** để điều khiển robot h�
 **Mục tiêu:**  
 Xây dựng chương trình minh họa **thuật toán Dijkstra** để tìm đường đi ngắn nhất giữa hai đỉnh bất kỳ trong **đồ thị vô hướng có trọng số dương**.
 
-**Yêu cầu chính:**:contentReference[oaicite:2]{index=2}
+**Yêu cầu:**
 - Đọc dữ liệu đồ thị từ file `Graph.csv`, định dạng: (v_from, v_to, weight)
 - Viết chương trình Python hướng đối tượng để:
 - Biểu diễn đồ thị bằng **danh sách cạnh liên thuộc**.  
