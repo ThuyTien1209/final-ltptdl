@@ -7,7 +7,7 @@
 ## 1. Thuật toán A\* – Robot hút bụi
 
 **Mục tiêu:**  
-Cài đặt và mô phỏng **thuật toán A\*** để điều khiển robot hút bụi trong **ma trận Aₘ,ₙ**, tối ưu hóa tổng chi phí khi làm sạch toàn bộ ô **dirty (D)**:contentReference[oaicite:3]{index=3}.
+Cài đặt và mô phỏng **thuật toán A\*** để điều khiển robot hút bụi trong **ma trận Aₘ,ₙ**, tối ưu hóa tổng chi phí khi làm sạch toàn bộ ô **dirty (D)**:
 >
 > **Mô tả bài toán:**
 - Ma trận gồm các ô: **F (free)**, **D (dirty)**, **C (clean)**.  
