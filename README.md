@@ -1,58 +1,45 @@
-# Đồ án môn học - Thuật toán A-Star và Dijkstra 
-> **Giảng viên hướng dẫn:** TS. Nguyễn An Tế  
-> **Nhóm thực hiện:** *Nhóm 10*  
-> **Ngôn ngữ:** Python (Jupyter Notebook, OOP)  
-> **Học phần:** Lập trình phân tích dữ liệu
+# Pathfinding Optimization using A star and Dijkstra Algorithm
 
 ---
 
-## Giới thiệu
+## Summary
 
-Đồ án này được thực hiện nhằm **ứng dụng hai thuật toán kinh điển** là **A\*** và **Dijkstra** – để **giải quyết bài toán tìm đường tối ưu** trong hai bối cảnh khác nhau:  
-1. **Robot hút bụi di chuyển trong ma trận (A\*)**.  
-2. **Tìm đường ngắn nhất trên đồ thị có trọng số (Dijkstra)**.
-
----
-
-## 1. Thuật toán A\* – Robot hút bụi
-
-### Mục tiêu:
-Cài đặt và mô phỏng **thuật toán A\*** để điều khiển robot hút bụi trong **ma trận Aₘ,ₙ**, tối ưu hóa tổng chi phí khi làm sạch toàn bộ ô **dirty (D)**:
-
-### Mô tả bài toán:
-- Ma trận gồm các ô:  
-  - **F (free)** – ô trống.  
-  - **D (dirty)** – ô bẩn.  
-  - **C (clean)** – ô sạch.  
-- Robot có thể:  
-  - **Move** đến một trong **8 ô lân cận** (chi phí = 1).  
-  - **Suck** để làm sạch ô hiện tại.  
-- Sau mỗi hành động, **tất cả các ô dirty còn lại** tăng thêm **1 đơn vị chi phí hút bụi**.
-
-### Yêu cầu:
-- Cho phép người dùng:  
-  - Nhập kích thước ma trận \( A_{m,n} \).  
-  - Chọn số lượng và vị trí ngẫu nhiên của các ô **dirty**.  
-- Áp dụng **thuật toán A\*** để tìm lộ trình tối ưu cho robot.  
-- Hiển thị kết quả trực quan:  
-  - **Lộ trình di chuyển** (Move/Suck).  
-  - **Tổng chi phí thực hiện**.  
+In this project, we set up two problems to apply A* and Dijkstra’s algorithms.
+- Robot Vacuum Pathfinding (A*): A grid-based environment where a robotic vacuum must find an optimal route to clean dirty cells while avoiding obstacles. The algorithm uses a heuristic-driven search (Chebyshev distance) to minimize total movement and cleaning cost.
+- Shortest Path in a Weighted Graph (Dijkstra) – A network of nodes (cities) where the goal is to find the shortest route between two points in a graph with positive edge weights. The algorithm uses a priority queue to iteratively relax edges and determine the minimum total distance.
 
 ---
 
-## 2. Thuật toán Dijkstra
+## Skills and Technologies Used
 
-### Mục tiêu:
-Xây dựng chương trình minh họa **thuật toán Dijkstra** để tìm đường đi ngắn nhất giữa hai đỉnh bất kỳ trong **đồ thị vô hướng có trọng số dương**.
+### Programming & Development
+- **Python** – Core programming language used for all implementations  
+- **Object-Oriented Programming (OOP)** – Designed modular classes (`Graph`, `Dijkstra`, `Node`, etc.)
 
-### Yêu cầu:
-- Đọc dữ liệu đồ thị từ file `Graph.csv`, định dạng: (v_from, v_to, weight)
-- Viết chương trình Python hướng đối tượng để:
-  - Biểu diễn đồ thị bằng **danh sách cạnh liên thuộc**.  
-  - Áp dụng **thuật toán Dijkstra** để tìm **đường đi ngắn nhất** và **độ dài đường đi**.
-  - Hiển thị kết quả trực quan (đường đi và tổng trọng số).  
+### Analytical & Visualization Skills
+- **Performance Evaluation** – Compared algorithm results in different scenarios
+- **Visualization Design** – Developed intuitive interfaces for step-by-step algorithm execution
+
 
 ---
 
-## Lời cảm ơn
-Nhóm xin gửi lời cảm ơn chân thành đến **TS. Nguyễn An Tế** – giảng viên hướng dẫn môn *Lập trình phân tích dữ liệu*, đã tận tình hướng dẫn và hỗ trợ trong suốt quá trình học tập và thực hiện đồ án.  
+## Project Highlight
+
+- Implemented both A* and Dijkstra algorithms in Python with a modular OOP structure.
+
+- Developed an interactive GUI using Tkinter that allows users to:
+  - Adjust input parameters/files
+  - Visualize algorithm steps in real time.  
+  - Control execution speed and view detailed information.
+
+- Simulated pathfinding in two scenarios:
+  1. Robot Navigation: Finding an optimal route in a 2D grid using the A* algorithm.  
+  2. Weighted Graph: Finding the shortest route between cities using Dijkstra Algorithm.
+
+
+---
+
+## Personal Information
+**Team**: Group 10 — Data Science, UEH University
+**Member:** **Lê Thủy Tiên** — Data Science  
+**Role in Project:** Implemented core algorithm logic and contributed to interface design for A* visualizations.  
