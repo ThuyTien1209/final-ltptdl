@@ -33,5 +33,6 @@ In this project, we set up two problems to apply A* and Dijkstra’s algorithms.
 
 ## Personal Information
 **Team**: Group 10 — Data Science, UEH University
+
 **Member:** Lê Thủy Tiên — Data Science  
 **Role in Project:** Implemented core algorithm logic and contributed to interface design for A* visualizations.  
