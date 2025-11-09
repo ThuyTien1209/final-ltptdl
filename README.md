@@ -1,42 +1,38 @@
-# Analysis and Application of the HDBSCAN Algorithm in Data Clustering
+# Pathfinding Optimization using A star and Dijkstra Algorithm
 
 
 ## Summary
 
-In this project, we analyze and apply the HDBSCAN algorithm (Hierarchical Density-Based Spatial Clustering of Applications with Noise) to the customer segmentation problem using the *Mall Customers* dataset from Kaggle.
-
+In this project, we set up two problems to apply A* and Dijkstra’s algorithms.
+- Robot Vacuum Pathfinding (A*): A grid-based environment where a robotic vacuum must find an optimal route to clean dirty cells while avoiding obstacles. The algorithm uses a heuristic-driven search (Chebyshev distance) to minimize total movement and cleaning cost.
+- Shortest Path in a Weighted Graph (Dijkstra) – A network of nodes (cities) where the goal is to find the shortest route between two points in a graph with positive edge weights. The algorithm uses a priority queue to iteratively relax edges and determine the minimum total distance.
 
 
 ## Skills and Technologies Used
 
-### Programming & Data Processing
-- **Python** – Core programming language for implementation.  
-- **Pandas & NumPy** – Data manipulation, cleaning, and numerical computation.  
-- **Scikit-learn** – Data preprocessing (scaling, encoding, and normalization).  
-- **HDBSCAN** – Main clustering library for model implementation.
+### Programming & Development
+- **Python** – Core programming language used for all implementations  
+- **Object-Oriented Programming (OOP)** – Designed modular classes (`Graph`, `Dijkstra`, `Node`, etc.)
 
-### Machine Learning & Analysis
-- **Clustering Techniques:** HDBSCAN, DBSCAN, Mean Shift, K-Means, HAC.  
-- **Feature Engineering** – Outlier handling, normalization (PowerTransformer + MinMaxScaler), and encoding.  
-- **Hyperparameter Tuning** – Grid Search for min_samples, min_cluster_size, and epsilon.  
-- **Model Comparison** – Evaluated across linear and nonlinear datasets.
-
-### **Visualization & Evaluation**
-- **UMAP** – Dimensionality reduction for 2D cluster visualization.  
-- **Evaluation Metrics** – DBCV, Silhouette Score
+### Analytical & Visualization Skills
+- **Performance Evaluation** – Compared algorithm results in different scenarios
+- **Visualization Design** – Developed intuitive interfaces for step-by-step algorithm execution
 
 
 ## Project Highlight
 
-- Study HDBSCAN Parameters and Operation Steps
-- Compared HDBSCAN with the same approach algorithms (Mean Shift, DBSCAN) and different approach algorithms (k-Means, HAC) 
-- Conduct data preprocessing and implement HDBSCAN on a real dataset.
-- Use UMAP visualization to represent clusters in 2D, showing distinct and interpretable groups.
+- Implemented both A* and Dijkstra algorithms in Python with a modular OOP structure.
+- Developed an interactive GUI using Tkinter that allows users to:
+- Adjust input parameters/files
+- Visualize algorithm steps in real time.  
+- Control execution speed and view detailed information.
+- Simulated pathfinding in two scenarios:
+1. Robot Navigation: Finding an optimal route in a 2D grid using the A* algorithm.  
+2. Weighted Graph: Finding the shortest route between cities using Dijkstra Algorithm.
 
 
 ## Personal Information
-**Team**: Group 11 — Data Science, UEH University
+**Team**: Group 10 — Data Science, UEH University
 
 **Member:** Lê Thủy Tiên — Data Science  
-**Role in Project:** Conduct algorithm comparison and analyze evaluation metrics.
- 
+**Role in Project:** Implemented core algorithm logic and contributed to interface design for A* visualizations.  
